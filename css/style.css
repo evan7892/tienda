@@ -270,7 +270,7 @@ button {
      margin-top: 25px;
      float: left;
      width: 100%;
-     border-bottom: solid rgba(0, 0, 0, 0.07) 1px;
+     border-bottom: solid rgb(255, 255, 255) 1px;
      margin-bottom: 25px;
 }
 
@@ -447,7 +447,8 @@ background-position: center center;
 .logo {
      float: left;
      position: relative;
-     padding-top: 11px;
+     padding-bottom: 10px;
+     width: 65%;
 }
 
 nav.main-menu {
@@ -474,18 +475,21 @@ ul.top_icon li:last-child {
 }
 
 ul.top_icon li a {
-     color: #fff;
+     color: rgb(0, 0, 0);
 }
 
-.menu-area-main li:hover a,
+.menu-area-main li.active:hover a,
 .menu-area-main li:focus a {
-     color: #ffff;
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     font-size: 140%;
 }
 
 .menu-area-main li.active a {
-     color: #fff;
+     color: rgb(48, 48, 48);
+     font-size: 1.2rem;
+     margin-top: 20px;
 }
-
 .right_cart_section {
      float: right;
      width: auto;
@@ -501,7 +505,10 @@ ul.top_icon li a {
 .right_cart_section .cart_icons {
      padding: 18px 0 0;
 }
-.last {padding-right: 0px;}
+.last {
+     padding-top: 20px;
+     padding-right: 0px;
+}
 .main-menu ul>li nth:child(7) a {
      padding-right: 0px;
 }
@@ -1069,8 +1076,6 @@ ul.top_icon li a {
      padding: 22px 30px;
 }
 
-
-}
 .main-menu ul li:last-child a {
      padding-right: 0;
 }
@@ -1086,11 +1091,11 @@ ul.top_icon li a {
      position: relative;
      border-bottom: solid #eee 1px;
 }
-.main-menu ul>li .sub-down li a::before {}
+.main-menu ul>li .sub-down li a::before,
 .main-menu ul>li .sub-down li a:hover {
      color: #111111;
 }
-.main-menu ul>li .sub-down li a:hover::before {}
+.main-menu ul>li .sub-down li a:hover::before,
 .main-menu ul li:first-child {
      margin-left: 0;
 }
@@ -1144,7 +1149,7 @@ ul.top_icon li a {
      display: inline-block;
      vertical-align: middle;
 }
-.main-menu ul>li:nth-child (6) {
+.main-menu ul>li:nth-child(6) {
      padding-right: 0px;
 }
 .nav>li {
@@ -1160,7 +1165,6 @@ ul.top_icon li a {
      right: 0;
      padding: 15px 0px;
 }
-.sub-full {}
 .simple-down {
      padding: 15px;
 }
@@ -1637,15 +1641,15 @@ display: inline-block;
 font-weight: 500;
 font-size: 17px;
 line-height: 30px;
-color: #f00;
+color: rgb(24, 163, 182);
 text-align: center;
 border-radius: 30px;
 }
 
 .banner-main .carousel-caption .buynow:hover {
-     border: #ff0000 solid 1px;
-     background: #ff0000;
-     color: #fff;
+     border: #000000 solid 1px;
+     background: #000000;
+     color: rgb(20, 247, 255);
 }
 
 #myCarousel a.carousel-control-next {
@@ -1694,9 +1698,9 @@ font-size: 18px;
 } 
 
 ul.social_icon li a:hover {
-     background: #ff0000;
-border: solid #ff0000 1px;        
-color: #fff;
+     background: #00ffff;
+border: solid #000000 1px;        
+color: rgb(0, 0, 0);
 }
 /** end banner **/
 
@@ -1776,7 +1780,7 @@ display: block
 }
 
 .clients_red {
-     background: #ff0000;
+     background: #00e1ff;
      padding-top: 90px;
      padding-bottom:110px;
 } 
@@ -1838,7 +1842,7 @@ border-radius: 50px;
 /** brand **/
 .brand {
      padding-top: 60px;
-     border-top: #db0000 solid 6px;}
+     border-top: #07b0ff solid 6px;}
 
 .brand-bg {
      background: #ebebeb;
@@ -1860,10 +1864,21 @@ border-radius: 50px;
     height: 200px;
     width: auto;
 }
+.brand-bg .brand_box:hover{
+     background-color: rgb(162, 249, 255);
+     border: black solid;
+     border-radius: 20px;
+}
 .brand-bg .brand_box h3 {
-
-     font-size: 27px;
+     font-family: 'Lato', sans-serif;
+     font-size: 20px;
      font-weight: bold;
+     color: #131313;
+     padding: 17px 0px 0px 0px;
+}
+.brand-bg .brand_box h4 {
+     font-family: 'Jua', sans-serif;
+     font-size: 17px;
      color: #131313;
      padding: 17px 0px 0px 0px;
 }
@@ -1883,23 +1898,26 @@ padding-bottom: 3px;
 }
 
 .read-more { 
-font-family: poppins;
+font-family: 'Lato', sans-serif;
 max-width: 212px;
+border: black solid 2px;
 margin: 0 auto;
 margin-top: 0px;
 display: block;
-background: #000;
-color: #fff !important;
-padding: 12px 0px;
+background: rgb(0, 238, 255);
+color: rgb(0, 0, 0) !important;
+padding: 6px 0px;
 width: 100%;
-font-size: 17px;
+font-size: 20px;
 text-align: center;
 border-radius: 32px;
 margin-top: 40px
 }
 
 .read-more:hover {
-     background: #ff0000;
+     background: #ff00d4;
+     color: black;
+     border: black solid 2px;
 }
 
 /** end brand **/
@@ -2124,8 +2142,8 @@ ul.location_icon span {
 #myCarousel .carousel-control-next:hover,
 #myCarousel .carousel-control-prev:focus,
 #myCarousel .carousel-control-next:focus {
-     background: #ff0000 ;
-     color: #fff;
+     background: #00f7ff ;
+     color: rgb(0, 0, 0);
 }
 
 #myCarousel a.carousel-control-prev {
