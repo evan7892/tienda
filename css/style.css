@@ -1996,21 +1996,22 @@ ul.social_icon li a:hover {
      text-align: center;
      padding: 80px 0px 30px 0px;
 }
+
 .brand-bg .brand_box img:hover {
      opacity: 0.4;
      filter: brightness(1.2);
-     background-color: transparent;
-}
-
-.brand-bg .brand_box:hover {
-     background-color: rgb(188, 242, 255);
-     border-radius: 20px;
-     border: black solid;
      background-image: url(../images/carrito.png);
      background-position: center;
      background-size: 50px;
      background-repeat: no-repeat;
 }
+
+.brand-bg .brand_box:hover {
+     border-radius: 20px;
+     border: black solid;
+     background-color: rgb(188, 242, 255);
+}
+
 .brand-bg .brand_box>a img {
      height: 200px;
      width: auto;
